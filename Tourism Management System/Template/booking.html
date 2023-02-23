@@ -1,0 +1,184 @@
+{%load static%}
+{% include 'header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/superfish.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/mbootstrap-datepicker.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-select.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-skin-border.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-skin-border.css'%}">
+   <!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="css/cs-select.css">
+<link rel="stylesheet" href="css/cs-skin-border.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+    <title>Booking Page</title>
+</head>
+<body>
+
+<!--     
+    {% if messages  %}
+    {% for message in messages %}
+       <script>
+        alert("{{message}}")
+       </script>
+    {% endfor %}
+{% endif %}  -->
+
+
+    <div class="tab-content">
+        {{price}}   
+        <form action="" method="post">
+            <input type="hidden" value="{{price}}" name="price">
+            {% csrf_token %}
+        <div role="tabpanel" class="tab-pane active" id="flights" style="background-image: url(http://127.0.0.1:8000/static/image/456.jpg); background-size: cover;">
+            <div class="row" style="width: 520px;
+            align-items: center;
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 515px;">
+           
+                <form method="POST">
+                   
+                <div class="col-xxs-12 col-xs-6 mt">
+                    <div class="text" style="background-color: green; height: 70px;display: flex; align-items: center; justify-content: center; width: 520px;
+                    margin-left: -145px;">
+                        <p style="color: white; font-size: 35px ; font-weight: bolder; padding-left: 20px;">Booking Form</p>
+                    </div>
+                    
+                    <div class="input-field" style="
+                        margin-left: -58px;
+                        width: 350px;margin-top: 15px;
+                        ">
+                         
+                        <label for="from">Your Name:</label>
+                        <input type="text" class="form-control" id="from-place" value="{{item.name}}" name="name" placeholder="your name" />
+                    </div>
+                </div>
+
+                <div class="col-xxs-12 col-xs-6 mt">
+                    <div class="input-field" style="
+                    margin-left: -58px;
+                    width: 350px;margin-top: 15px;">
+                        <label for="from"> Your Email:</label>
+                        <input type="text" class="form-control" id="to-place" name="email" value="{{item.email}}" placeholder=" your email" />
+                    </div>
+                </div>
+                <div class="col-xxs-12 col-xs-6 mt">
+                    <div class="input-field" style="
+                    margin-left: -58px;
+                    width: 350px; margin-top: 15px;">
+                        <label for="from">Your Phone No:</label>
+                        <input type="text" class="form-control" id="to-place" name="phone_no"  value="{{item.phone}}" placeholder="your phone no" />
+                    </div>
+                </div>
+                <div class="adjest" style="display: flex;">
+                <div class="col-xxs-12 col-xs-6 mt">
+                    <div class="input-field" style="margin-left: -54px;margin-top: 15px;">
+                        <label for="from">Adults:</label>
+                        <select class="form-control" name="adults" required="">
+                        <option value="">Value</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>   
+                <div class="col-xxs-12 col-xs-6 mt">
+                    <div class="input-field" style="margin-top: 15px;">
+                        <label for="from">Children:</label>
+                        <select class="form-control" name="children" required="" style="width: 162px;">
+                        <option value="">Value</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="adjest" style="display: flex;">
+                <div class="col-xxs-12 col-xs-6 mt alternate">
+                    <div class="input-field" style="
+                    margin-left: 0;
+                    width: 162px;margin-top: 15px;">
+                        <label for="date-start">Check-in-Date:</label>
+                        <input type="date" class="form-control" id="date-start" name="checkindate" placeholder="mm/dd/yyyy" 
+                        name="date" required />
+                    </div>
+                </div>
+                
+                <div class="col-xxs-12 col-xs-6 mt alternate">
+                    <div class="input-field" style="
+                    margin-left: 0;
+                    width: 162px;margin-top: 15px;">
+                        <label for="date-start">Check-out-Date:</label>
+                        <input type="date" class="form-control" id="date-start" name="checkoutdate" placeholder="mm/dd/yyyy" 
+                        name="date" required />
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="adjest" style="display: flex;">
+            <div class="col-xxs-12 col-xs-6 mt alternate">
+             <div class="input-field" style="
+             margin-left: 0;
+             width: 167px;margin-top: 15px; ">
+             
+                <label for="from">Package Id:</label>
+                <input type="text" class="form-control" id="from-place"  name="packageid" value="{{id}}" placeholder="Package Id" />
+                </div>
+            </div>
+
+                <div class="col-xxs-12 col-xs-6 mt">
+                    <div class="input-field" style="
+                    margin-left: 0px;
+                    width: 162px;margin-top: 15px;">
+                        <label for="from">Package Name</label>
+                        <input type="text" class="form-control" id="to-place" name="packagename"  value="{{name}}" placeholder="Package Name" />
+                    </div>
+                </div>
+            </div>
+
+                
+
+                <div class="col-xs-12" style="margin-top: 20px; width: 150px;">
+                    <input type="submit" class="btn  btn-block" value="BOOK NOW" name="submitone" style="background-color: green; color: white;">
+                </div>
+
+                
+            </form>
+        
+    </body>
+    </html>  
+    
+

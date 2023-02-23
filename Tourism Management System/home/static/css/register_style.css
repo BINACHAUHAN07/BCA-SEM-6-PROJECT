@@ -1,0 +1,415 @@
+/* FOR REGISTER */
+
+.main-title-w3pvt{
+    margin-top: 1em;
+}
+
+.login-form-grids{
+    width:50%;
+    padding: 3em;
+    margin:3em auto 0;
+}   
+
+
+.login-form-grids h2{
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.login-form-grids input[type="submit"]{
+    border:none;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    font-size: 1.3em;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.login p a {
+    color: black;
+    text-decoration: underline;
+}
+
+#fname,#lname,#email,#mobile,#password1,#password2{
+  width: 100%;
+  height: 20px;
+}
+
+
+.col-form-label{
+  display: block;
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  float: left;
+}
+
+/* REGISTER OVER */
+
+
+/* SERVICE PAGE */
+
+.card{
+    display: inline-block;
+    margin: 13px;
+    width: 330px;
+    height: auto;
+    /*border: 2px solid black;*/
+    box-shadow: 2px 2px 4px 2px gray;
+    justify-content: space-around;
+}
+
+.card-img-top{
+    width: 330px;
+    height: 200px;
+}
+
+.card-title{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text{
+    padding: 13px;
+    font-size: 12px;
+}
+
+#card-btn{
+    margin-bottom: 10px;
+}
+/* SERVICE PAGE OVER */
+
+/* Banner start*/
+
+/* banner */
+
+.banner {
+    position: relative;
+    z-index: 0;
+}
+
+#slider {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin: 0 auto;
+}
+
+.rslides_tabs {
+    list-style: none;
+    padding: 0;
+    background: rgba(0, 0, 0, .25);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
+    -moz-box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
+    font-size: 18px;
+    list-style: none;
+    margin: 0 auto 50px;
+    max-width: 540px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.rslides_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 1px;
+}
+
+.rslides_tabs a {
+    width: auto;
+    line-height: 20px;
+    padding: 9px 20px;
+    height: auto;
+    background: transparent;
+    display: inline;
+}
+
+.rslides_tabs li:first-child {
+    margin-left: 0;
+}
+
+.rslides_tabs .rslides_here a {
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-weight: bold;
+}
+
+.events {
+    list-style: none;
+}
+
+.callbacks_container {
+    position: relative;
+}
+
+ul.callbacks_tabs {
+    position: absolute;
+    z-index: 2;
+    left: 48%;
+    bottom: 20%;
+    margin: 0 auto;
+}
+
+.callbacks_tabs a {
+    visibility: hidden;
+}
+
+.callbacks_tabs a:after {
+    content: "\f111";
+    font-size: 0;
+    visibility: visible;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.5;
+}
+
+.callbacks_here a:after {
+    background: #fff;
+    opacity: 1;
+}
+
+.slide-btm-wthree-w3_pvt p i {
+    color: #e3ebef;
+    font-size: 2em;
+    margin-right: 15px;
+}
+
+.slide-btm-wthree-pos span {
+    color: #eee;
+}
+
+/*
+.callbacks_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    top: 78%;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 34px;
+    width: 34px;
+    background: url("../images/left.png") no-repeat 0px 0px;
+}
+.callbacks_nav.prev {
+    left: auto;
+    background: url("../images/back.png") no-repeat 0px 0px;
+    left: 18em;
+}
+.callbacks_nav.next {
+    left: auto;
+    background: url("../images/next.png") no-repeat 0px 0px;
+    right: 18em;
+}
+.callbacks_nav:active {
+    opacity: 1.0;
+}
+.callbacks2_nav:active {
+    opacity: 1.0;
+}*/
+
+#slider-pager a {
+    display: inline-block;
+}
+
+#slider-pager span {
+    float: left;
+}
+
+#slider-pager span {
+    width: 100px;
+    height: 15px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 30em;
+    opacity: 0.6;
+}
+
+#slider-pager .rslides_here a {
+    background: #FFF;
+    border-radius: 30em;
+    opacity: 1;
+}
+
+#slider-pager a {
+    padding: 0;
+}
+
+#slider-pager li {
+    display: inline-block;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    left: 0%;
+    top: 0;
+    width: 100%;
+}
+
+.rslides li {
+    position: relative;
+    display: block;
+    float: none;
+}
+
+.rslides img {
+    height: auto;
+    border: 0;
+}
+
+.callbacks_tabs li {
+    display: inline-block;
+}
+
+.callbacks_tabs a {
+    visibility: hidden;
+    width: 20px;
+    line-height: 19px;
+    height: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.callbacks_tabs a:hover {
+    background: #1165f3;
+    color: #fff;
+}
+
+.banner1 {
+    background: url(images/b3.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.banner2 {
+    background: url(images/b1.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.banner3 {
+    background: url(images/b2.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.banner:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner-text {
+    padding: 20vw 0 14vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slider-info h3 {
+    font-size: 5em;
+    text-transform: capitalize;
+    color: #fff;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.slider-info span.line {
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.slider-info span.line:after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: #eaeaea;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.slider-info h3 span {
+    background: #d3b800;
+    padding: 0 10px;
+}
+
+.w3_pvt-link-bnr {
+    padding: 8px 35px;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+.w3_pvt-link-bnr:hover {
+    color: #000;
+    background: #fff;
+}
+
+.slider-info p {
+    letter-spacing: 1px;
+    margin-top: 1em;
+    font-size: 1.3em;
+    width: 65%;
+    font-weight: 600;
+    margin: 0 auto 0;
+    color: #fff;
+    text-transform: capitalize;
+    font-style: italic;
+    word-spacing: 3px;
+}
+
+/* Banner Over */

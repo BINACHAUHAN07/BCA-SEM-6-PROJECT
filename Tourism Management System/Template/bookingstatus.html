@@ -1,0 +1,196 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/superfish.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/mbootstrap-datepicker.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-select.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-skin-border.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-skin-border.css'%}">
+   <!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="css/cs-select.css">
+<link rel="stylesheet" href="css/cs-skin-border.css">
+
+<link rel="stylesheet" href="css/style.css" >
+
+    <title>Booking Status</title>
+
+    <!-- CSS -->
+
+<style type="text/css">
+	.recipt{
+	    margin: auto;
+	    background-color: #abf7b1;
+	    width: 600px;
+	    height: auto;
+	    padding: 1px;
+	    font-weight: bold;
+	    border: 1px solid rgb(20, 18, 18);
+	}
+
+	.recipt form{
+	    border: 1px solid rgb(15, 12, 12);
+	    padding: 40px;
+	    /*font-size: 15px;*/
+	}
+
+	.main{
+	    column-count:2;
+	}
+
+
+
+</style>
+    
+</head>
+<body>
+
+    
+    
+    <div class="recipt">
+        <form action="" >
+        <h1 data-blast="color" data-blast="color">Tourism Ticket Booking</h1>
+        
+        <hr color="black">
+        <br>
+
+        <div class="main">
+            <div class="form-left-w3l">
+                    <label for="form" class="col-form-label">Package Id:&nbsp;&nbsp;&nbsp;&nbsp;{{item.packageid}}</label>
+            </div>
+        </div>
+
+        <br>
+        <h2>Visitor Details</h2>
+				<br>
+				<div class="main">
+					
+					<div class="form-right-w3ls">
+						<label for="form" class="col-form-label">Your Name:&nbsp;&nbsp;&nbsp;&nbsp;{{item.name}}</label>
+					</div>
+                </div>
+
+                <br>
+				<div class="main">
+					
+					<div class="form-right-w3ls">
+						<label for="form" class="col-form-label">Your Email:&nbsp;&nbsp;&nbsp;&nbsp;{{item.email}}</label>
+					</div>
+                </div>
+
+                <br>
+                <div class="main">
+					<div class="form-left-w3l">
+                            <label for="form" class="col-form-label">Your Phone No:&nbsp;&nbsp;&nbsp;&nbsp;{{item.phone_no}}</label>
+                    </div>
+
+				</div>
+
+
+                <br>
+
+                <h2>Package Details</h2>
+				<br>
+				<div class="main">
+					<div class="form-right-w3ls">
+						<label for="form" class="col-form-label">Package Name:&nbsp;&nbsp;&nbsp;&nbsp;{{item.packagename}}</label>
+					</div>
+
+                    <div class="form-left-w3ls">
+                        <label for="form" class="col-form-label">Price:&nbsp;&nbsp;&nbsp;&nbsp;{{item.price}}</label>
+                    </div>
+
+				</div>
+				<br>
+				<div class="main">
+					
+					<div class="form-right-w3l">
+						<label for="form" class="col-form-label">Check-in-Date :&nbsp;&nbsp;&nbsp;&nbsp;{{item.checkindate}}</label>
+					</div>
+
+                    <div class="form-right-w3l">
+						<label for="form" class="col-form-label">Check-out-Date :&nbsp;&nbsp;&nbsp;&nbsp;{{item.checkoutdate}}</label>
+					</div>
+
+
+				</div>
+				<br>
+				<div class="main">
+					<div class="form-left-w3ls">
+                            <label for="form" class="col-form-label">Adults :&nbsp;&nbsp;&nbsp;&nbsp;{{item.adults}}</label>
+                    </div>
+                    <div class="form-left-w3l">
+                            <label for="form" class="col-form-label">Children :&nbsp;&nbsp;&nbsp;&nbsp;{{item.children}}</label>
+                    </div>
+				</div>
+				<br>
+
+                
+
+                <br><br><br><br><br>
+
+				<div class="main">
+					<div class="form-left-w3l">
+                            <label for="form" class="col-form-label">&nbsp;</label>
+                    </div>
+					<div class="form-right-w3ls">
+						<label for="form" class="col-form-label"><hr width="50%" size="1" color="black"></label>
+					</div>
+				</div>
+				<div class="main">
+					<div class="form-left-w3l">
+                            <label for="form" class="col-form-label">&nbsp;</label>
+                    </div>
+					<center>
+					<div class="form-right-w3ls">
+						<label for="form" class="col-form-label">Sign</label>
+					</div>
+					</center>
+				</div>
+				
+				<p class="lead marginbottom">THANK YOU!</p>
+  
+				
+
+	</form>
+	</div>
+
+	<div class="col-xs-12" style="margin-top:30px;">
+				
+			<center>
+				<button class="btn btn-success" id="invoice-print" onClick="myFunction()" style="padding:10px; background: #abf7b1; font-weight:bold; border: 2px solid #000; color: black;">
+					<i class="fa fa-print"></i>
+					Print Invoice
+				</button>
+			</center>
+					<script>
+						function myFunction() 
+						{
+							window.print();
+						}
+					
+					</script>	
+	</div>
+				
+</body>
+</html>

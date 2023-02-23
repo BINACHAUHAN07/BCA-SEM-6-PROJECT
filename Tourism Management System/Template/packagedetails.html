@@ -1,0 +1,108 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/superfish.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/mbootstrap-datepicker.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-select.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-skin-border.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cs-skin-border.css'%}">
+   <!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="css/cs-select.css">
+<link rel="stylesheet" href="css/cs-skin-border.css">
+
+<link rel="stylesheet" href="css/style.css" >
+
+    <title>Package Details</title>
+</head>
+<body>
+    <div class="tex" style="display:flex; align-items: center; justify-content: center; background-color: #83f28f; margin-left: 20%; margin-right: 20%;">
+        <div class="image" style="display:flex; flex-direction: column;">
+             <img src="http://127.0.0.1:8000/media/{{item.image}}" alt="" style="width: 70%; height: 70%; margin-top: 0; border-radius: 20px;">
+             {% comment %} <form action="/booking/" method="get">
+             <input type="submit" value="Book" style="width: 70px; height: 30px; margin-left: 50px; margin-top: 30px;">
+            </form> {% endcomment %}
+        </div>
+   <div class="you" style=" margin-top: 30px; background-color: #83f28f; padding: 40px; ">
+    <div class="info" style="">
+
+    <div class="recipt"> 
+        <h1 data-blast="color" data-blast="color">Package Details</h1>
+    </div>
+    </div>
+    <br>
+        <div class="info" style="">
+        <div class="main">
+					
+            <div class="form-right-w3ls">
+                <label for="form" class="col-form-label">Title:&nbsp;&nbsp;&nbsp;{{item.Title}}</label>
+            </div>
+        </div>
+
+        <br>
+        <div class="main">
+            
+            <div class="form-right-w3ls">
+                <label for="form" class="col-form-label">Description:&nbsp;&nbsp;&nbsp;{{item.Discription}}</label>
+            </div>
+        </div>
+
+        <br>
+        <div class="main">
+            <div class="form-left-w3l">
+                    <label for="form" class="col-form-label">Date Of Start:&nbsp;&nbsp;&nbsp;{{item.DateOfStart}}</label>
+            </div>
+
+        </div>
+        <br>
+        
+        <div class="main">
+            <div class="form-left-w3l">
+                    <label for="form" class="col-form-label">Price:&nbsp;&nbsp;&nbsp;{{item.Price}}</label>
+            </div>
+
+        </div>
+        <br>
+        <div class="main">
+            <div class="form-left-w3l">
+                    <label for="form" class="col-form-label">Days:&nbsp;&nbsp;&nbsp;{{item.Days}}</label>
+            </div>
+
+        </div>
+        <br>
+        <div class="main">
+            <div class="form-left-w3l">
+                    <label for="form" class="col-form-label">Available Sheet:&nbsp;&nbsp;&nbsp;{{item.Totalseet}}</label>
+            </div>
+
+        </div>
+        
+        </div>
+        
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>

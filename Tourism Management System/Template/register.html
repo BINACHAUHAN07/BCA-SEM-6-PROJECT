@@ -1,0 +1,95 @@
+{%load static%}
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Sinp Up Here</title>
+
+     <!-- Favicon -->
+     <link href="img/favicon.ico" rel="icon">
+
+     <!-- Google Web Fonts -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+ 
+     <!-- Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ 
+     <!-- Libraries Stylesheet -->
+     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+ 
+     <!-- Customized Bootstrap Stylesheet -->
+     <link href="{% static 'css/style.css'%}" rel="stylesheet">
+
+
+</head>
+{% if messages  %}
+{% for message in messages %}
+   <script>
+    alert("{{message}}")
+   </script>
+{% endfor %}
+{% endif %} 
+<body>
+    <center>
+    
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;" style="background-image: url('http://127.0.0.1:8000/static/image/carousel-1.jpg') !important;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                       
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Sign Up Here</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Your Name" name="name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Your Email" name="email" required="required" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="number" class="form-control p-4" placeholder="Your Phone No." name="phone" required="required" />
+                                </div>
+
+
+                               
+
+                                 <div class="form-group">
+                                    <input type="password" class="form-control p-4" placeholder="Your Password" name="paasword" required="required" />
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control p-4" placeholder="Conform Password" name="conformpaasword" required="required" />
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-primary btn-block py-3" type="submit">Sign Up Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+    {% include 'footer.html' %}
+
+</body>
+</html>
